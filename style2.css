@@ -1,0 +1,230 @@
+* {
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+ }
+ 
+body{
+  background-image: url(background.jpeg);
+  background-repeat: repeat-y;
+}
+
+nav{
+   background-attachment: fixed;
+   background-color: rgb(22, 22, 22);
+   height: 90px;
+   width: 100%;
+}
+
+label.logo{
+   color: white;
+   font-size: 50px;
+   line-height: 88px;
+   padding: 0 60px;
+   font-weight: bold;
+}
+
+nav ul{
+   float: right;
+   margin-right: 90px;
+}
+
+nav ul li{
+   display: inline-block;
+   line-height: 96px;
+   margin: 0 10px;
+}
+
+nav ul li a{
+   color: white;
+   font-size: 25px;
+   padding: 7px 13px;
+   text-transform: uppercase;
+}
+
+a.active , a:hover{
+   color:rgb(109, 110, 110);
+   transition: 0.5s;
+}
+
+.checkbtn{
+   color: white;
+   font-size: 25px;
+   float: right;
+   line-height: 90px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+#check{
+   display: none;
+}
+
+ .know{
+    color: white;
+    font-size: 37px;
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+ }
+
+ .bodymid{
+    margin-top: 20px;
+    overflow: hidden;
+    margin-left: 50px;
+ }
+
+ .description{
+    width: 55%;
+    margin-left: 35px;
+    float: left;
+ }
+
+ .aboutme{
+    color: rgb(204, 201, 192);
+    font-size: 25px;
+    margin-top: 10px;
+    width: 100%;
+
+ }
+ .extra{
+    color: rgb(204, 201, 192);
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 10px;;
+    width: 100%;
+ }
+
+ .coder2 img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 40px;
+    border-radius: 300px;
+ }
+
+ .languages{
+   color: white;
+   font-size: 30px;
+   margin-top: 80px;
+   display: inline-block;
+   margin-left: 635px;
+ }
+
+ .cards{
+   width: 85%;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding-bottom: 25px;
+   overflow: hidden;
+   border: 1px solid rgb(0, 42, 255);
+   border-radius: 10px;
+ }
+
+ .cards img{
+   border: 1px solid rgb(20, 207, 240);
+   border-radius: 5px;
+   margin-left: 90px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+   width: 200px;
+   height: 200px;
+   float: left;
+ }
+
+ .cards img:hover{
+   box-shadow: 2px 2px 20px rgb(103, 105, 103);
+ }
+
+ @media (max-width: 650px){
+   label.logo{
+       font-size: 30px;
+       padding-left: 40px;
+   }
+
+   nav ul li a{
+       font-size: 15px;
+   }
+
+   .checkbtn{
+       display: block;
+   }
+
+   ul{
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background-color:rgb(37, 37, 37);
+       left: -100%;
+       text-align: center;
+       transition: all 0.5s;
+   }
+
+   nav ul li{
+       display: block;  
+       margin: 10px 0px;     
+   }
+   
+   #check:checked ~ ul{
+       left: 0;
+   }
+
+   .know{
+      font-size: 30px;
+      margin-top: 60px;
+   }
+
+   .aboutme , .extra{
+      font-size: 20px;
+   }
+
+   .bodymid{
+      border: 1px solid yellow;
+      margin-left: 0px;
+   }
+
+   .coder2 img{
+      margin-left: 18px;
+      width: 90%;
+   }
+
+   .description{
+      margin-left: 10px;
+      width: 100%;
+   }
+
+   .aboutme{
+      width: 100%;     
+   }
+
+   .extra ul{
+       margin-left: 0px;
+       overflow: hidden;
+   }
+
+   .languages{
+      font-size: 30px;
+      margin-top: 80px;
+      display: inline-block;
+      margin-left: 60px;
+    }
+
+    .cards{
+      width: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .cards img{
+      margin-left: 75px;
+    }
+
+}
+
+
+ 

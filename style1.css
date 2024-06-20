@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+body{
+   background-image: url(background.jpeg);
+   background-repeat: repeat-y;
+}
+
+nav{
+    background-color: rgb(22, 22, 22);
+    height: 90px;
+    width: 100%;
+}
+
+label.logo1{
+    color: white;
+    font-size: 50px;
+    line-height: 88px;
+    padding: 0 60px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 90px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 96px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+}
+
+a.active , a:hover{
+    color:rgb(109, 110, 110);
+    transition: 0.5s;
+}
+
+.checkbtn{
+    color: white;
+    font-size: 25px;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+.intro{
+    color: white;
+    font-size: 40px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.intro1{
+    width: 500px;
+    float: left;
+    margin-top: 97px;
+    margin-left: 120px;
+}
+
+
+.typewriter{
+      margin-top: 30px;
+}
+
+
+.coder1{
+    margin-left: 880px;
+    margin-right: 100px;    
+}
+
+.coder1 img{
+    width: 480px;
+}
+
+.connect{
+    height: 90px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.connect a{
+    text-decoration: none;
+}
+
+.connect a img{
+    width: 6%;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+
+.logo2{
+    width: 60%;
+    padding-top: 10px;
+}
+
+.findme{
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    margin-top: 42px;
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 500px){
+    label.logo1{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(37, 37, 37);
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        display: block; 
+        margin: 10px 0px;     
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .intro{
+        margin-top: 20px;
+        font-size: 25px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro1{
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+    .findme{
+        border: 1px solid yellow;
+        width: 80%;
+        margin-left: 80px;
+    }
+
+    .logo2{
+        border: 1px solid yellow;
+    }
+
+    .logo2 img{
+      
+      border: 1px solid green;
+      margin-left: 0px;
+    }
+
+}

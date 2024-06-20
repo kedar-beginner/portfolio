@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedar Kisan | Portfolio</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://kit.fontawesome.com/edb00bb740.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo1">Kedar Kisan</label>
+        <ul>
+            <li class="navkey"><a href="#">Home</a></li>
+            <li class="navkey"><a href="#">About</a></li>
+            <li class="navkey"><a href="#">Projects</a></li>
+            <li class="navkey"><a class="active" href="#">Contact</a></li>
+        </ul>
+    </nav>
+   
+   <section>
+    <div>
+       <p class="contact">
+           if you want to contact me then please fill out the form below
+       </p>
+    </div>
+    <div class="container">
+        <div class="box">
+        <form name="myform" action="/action_page.php">
+            <label for="name" style="font-size: 20px;">Enter Your Name</label>
+            <br>
+            <input type="text" name="name" placeholder="Name" id="name">
+            <br><br>
+            <label for="email" style="font-size: 20px;">Enter Your Email</label>
+            <br>
+            <input type="text" placeholder="Email" id="email">
+            <br><br>
+            <label for="msg" style="font-size: 20px;">Any msg you want to convey</label>
+            <br>
+            <textarea name="msg" id="textarea"></textarea>
+            <br><br>
+            <button type="submit" id="btn" onclick="return validateForm()">Submit</button>
+        </form>
+        </div>
+    </div>
+    <div class="connect">
+            <p class="socialmedia">
+                Also Find me on Social Media
+            </p>
+            <p class="feel">
+                Feel Free to Connect
+            </p>
+            <div class="logo2">
+                <a href="https://www.linkedin.com/in/kedar-kisan-471b66286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="linkedin.png" alt="no preview">
+                </a>
+                <a href="https://github.com/kedar-beginner">
+                    <img src="github.png" alt="no preview">
+                </a>
+                <a href="https://www.instagram.com/kedarkisan88?utm_source=qr&igsh=MWQxcGVscXI4cGlidQ==">
+                    <img src="instagram.png" alt="no preview">
+                </a>
+            </div>
+    </div>
+   </section> 
+
+   <script src="script4.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+* {
+   box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   list-style: none;
+ }
+ 
+body{
+  background-image: url(background.jpeg);
+  background-repeat: repeat-y;
+}
+
+nav{
+   background-color: rgb(22, 22, 22);
+   height: 90px;
+   width: 100%;
+}
+
+label.logo1{
+   color: white;
+   font-size: 50px;
+   line-height: 88px;
+   padding: 0 60px;
+   font-weight: bold;
+}
+
+nav ul{
+   float: right;
+   margin-right: 90px;
+}
+
+nav ul li{
+   display: inline-block;
+   line-height: 96px;
+   margin: 0 10px;
+}
+
+nav ul li a{
+   color: white;
+   font-size: 25px;
+   padding: 7px 13px;
+   text-transform: uppercase;
+}
+
+a.active , a:hover{
+   color:rgb(109, 110, 110);
+   transition: 0.5s;
+}
+
+.checkbtn{
+   color: white;
+   font-size: 25px;
+   float: right;
+   line-height: 90px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+}
+
+#check{
+   display: none;
+}
+
+ .contact{
+    color: white;
+    font-size: 30px;
+    width: 50%;
+    padding-top: 60px;
+    margin: auto;
+ }
+
+ /*.container{
+    color: white;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(38, 37, 37);
+    width: 30%;
+    border: 1px solid red;
+    border-radius: 10px;
+ }
+    */
+
+ form{
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background-color: rgb(127, 127, 127);
+ }
+
+ .box :hover{
+    box-shadow: 2px 2px 20px rgb(103, 105, 103);
+ }
+
+ #name{
+    width: 98%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+ }
+
+ #email{
+    width: 98%;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;   
+ }
+
+ #textarea{
+    width: 98%;
+    margin-top: 10px;
+    border-radius: 5px;
+ }
+
+ #btn{
+     width: 98%;
+     text-align: center;
+     cursor: pointer;
+     padding: 5px;
+     border-radius: 5px;
+ }
+
+ .connect{
+    color: white;
+    margin-top: 30px;
+    width: 500px;
+    margin-left: 600px;
+ }
+
+ .socialmedia{
+    margin: 0px;
+    font-size: 25px;
+ }
+
+ .feel{
+    margin: 0px;
+    margin-left: 70px;
+    margin-top: 15px; 
+    font-size: 20px;
+ }
+
+ .logo2{
+    margin-left: 68px;
+ }
+
+.logo2 a{
+    text-decoration: none;
+}
+
+.logo2 a img{
+    width: 30px;
+    margin-top: 17px;
+    margin-left: 18px;
+}
+
+@media (max-width: 650px){
+   label.logo1{
+      font-size: 30px;
+      padding-left: 40px;
+  }
+
+  nav ul li a{
+      font-size: 15px;
+  }
+
+  .checkbtn{
+      display: block;
+  }
+
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color:rgb(37, 37, 37);
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+  }
+
+  nav ul li{
+      display: block;  
+      margin: 10px 0px;     
+  }
+  
+  #check:checked ~ ul{
+      left: 0;
+  }
+
+   .contact{
+      font-size: 15px;
+      width: 80%;
+   }
+
+   .form{
+      margin-top: 30px;
+      width: 90%;
+   }
+
+   #btn{
+      margin: auto;
+   }
+
+   .connect{
+      margin: auto;
+      margin-bottom: 40px;
+   }
+
+   .socialmedia{
+      margin-left: 30px;
+      font-size: 22px;
+   }
+
+   .feel{
+      font-size: 18px;
+      margin-left: 90px;
+   }
+
+   .logo2{
+      margin-left: 80px;
+   }
+}
