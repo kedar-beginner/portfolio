@@ -174,9 +174,8 @@ a.active , a:hover{
     }
 
     .coder img{
-        width: 100%;
+        width: 80%;
         height: auto;
-        display: block;
     }
 
     .connect{
@@ -185,7 +184,7 @@ a.active , a:hover{
     }
 
     .findme{
-        width: 38%;
+        width: 43%;
         font-size: 30px;
         margin: auto;
     }
