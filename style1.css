@@ -125,6 +125,10 @@ a.active , a:hover{
     margin-bottom: 20px;
 }
 
+span{
+    color: blue;
+}
+
 
 @media (max-width: 500px){
     label.logo1{
@@ -168,7 +172,6 @@ a.active , a:hover{
     }
 
    .intro1{
-        border: 1px solid yellow;
         margin-top: 50px;
         margin-left: 60px;
     }
