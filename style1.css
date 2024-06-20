@@ -177,7 +177,7 @@ span{
     }
 
     .coder img{
-        width: 80%;
+        width: 60%;
         height: auto;
     }
 
@@ -187,14 +187,14 @@ span{
     }
 
     .findme{
-        width: 43%;
-        font-size: 30px;
+        width: 45%;
+        font-size: 25px;
         margin: auto;
     }
 
     .logo2{
         margin-top: 0px;
-        margin-left: 160px;
+        margin-left: 150px;
      }
     
     .logo2 a img{
