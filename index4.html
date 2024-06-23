@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kedar Kisan | Portfolio</title>
     <link rel="stylesheet" href="style4.css">
     <script src="https://kit.fontawesome.com/edb00bb740.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo1">Kedar Kisan</label>
-        <ul>
-            <li class="navkey"><a href="index.html">Home</a></li>
-            <li class="navkey"><a href="index2.html">About</a></li>
-            <li class="navkey"><a href="index3.html">Projects</a></li>
-            <li class="navkey"><a class="active" href="index4.html">Contact</a></li>
-        </ul>
-    </nav>
-   
-   <section>
-    <div>
-       <p class="contact">
-           if you want to contact me then please fill out the form below
-       </p>
-    </div>
-    <div class="container">
-        <div class="box">
-        <form name="myform" action="/action_page.php">
-            <label for="name" style="font-size: 20px;">Enter Your Name</label>
-            <br>
-            <input type="text" name="name" placeholder="Name" id="name">
-            <br><br>
-            <label for="email" style="font-size: 20px;">Enter Your Email</label>
-            <br>
-            <input type="text" placeholder="Email" id="email">
-            <br><br>
-            <label for="msg" style="font-size: 20px;">Any msg you want to convey</label>
-            <br>
-            <textarea name="msg" id="textarea"></textarea>
-            <br><br>
-            <button type="submit" id="btn" onclick="return validateForm()">Submit</button>
-        </form>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo1">Kedar Kisan</label>
+            <ul>
+                <li class="navkey"><a href="index.html">Home</a></li>
+                <li class="navkey"><a href="index2.html">About</a></li>
+                <li class="navkey"><a href="index3.html">Projects</a></li>
+                <li class="navkey"><a class="active" href="index4.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <p class="contact">
+                if you want to contact me then please fill out the form below
+            </p>
         </div>
-    </div>
-    <div class="connect">
+        <div class="container">
+            <div class="box">
+                <form name="contactform" action="/action_page.php" name="myForm" onsubmit="return validateForm()" method="post">
+                    <label for="name" style="font-size: 20px;">Enter Your Name</label>
+                    <br>
+                    <input type="text" name="name" placeholder="Name" id="name" class="items" required>
+                    <br><br>
+                    <label for="email" style="font-size: 20px;">Enter Your Email</label>
+                    <br>
+                    <input type="text" name="email" placeholder="Email" id="email" class="items" required>
+                    <br><br>
+                    <label for="phone" style="font-size: 20px;">Enter Your Phone Number</label>
+                    <br>
+                    <input type="phone" name="phone" placeholder="Phone Number" id="phone" class="items" required>
+                    <br><br>
+                    <label for="msg" style="font-size: 20px;">Any msg you want to convey</label>
+                    <br>
+                    <textarea name="msg" id="textarea" placeholder="write something" required></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="connect">
             <p class="socialmedia">
                 Also Find me on Social Media
             </p>
@@ -55,7 +68,8 @@
                 Feel Free to Connect
             </p>
             <div class="logo2">
-                <a href="https://www.linkedin.com/in/kedar-kisan-471b66286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                <a
+                    href="https://www.linkedin.com/in/kedar-kisan-471b66286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <img src="linkedin.png" alt="no preview">
                 </a>
                 <a href="https://github.com/kedar-beginner">
@@ -65,9 +79,10 @@
                     <img src="instagram.png" alt="no preview">
                 </a>
             </div>
-    </div>
-   </section> 
+        </div>
+    </section>
 
-   <script src="script4.js"></script>
+    <script src="script4.js"></script>
 </body>
+
 </html>
