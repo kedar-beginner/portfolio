@@ -3,6 +3,7 @@
    margin: 0px;
    padding: 0px;
    text-decoration: none;
+   font-family: roboto;
  }
  
 body{
@@ -18,7 +19,7 @@ nav{
 }
 
 label.logo{
-   color: white;
+   color:rgba(57, 163, 245, 0.966);
    font-size: 50px;
    line-height: 88px;
    padding: 0 60px;
@@ -62,12 +63,18 @@ a.active , a:hover{
    display: none;
 }
 
+header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
  .know{
-    color: white;
+    color: rgba(10, 248, 248, 0.966);
     font-size: 37px;
     width: 60%;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 170px;
  }
 
  .bodymid{
@@ -107,23 +114,21 @@ a.active , a:hover{
  }
 
  .languages{
-   color: white;
+   color: rgba(10, 248, 248, 0.966);
    font-size: 30px;
    margin-top: 80px;
    display: inline-block;
-   margin-left: 635px;
+   margin-left: 600px;
  }
 
  .cards{
    width: 85%;
-   margin-left: 100px;
-   margin-right: 100px;
-   margin-top: 50px;
-   margin-bottom: 50px;
+   margin: 50px 100px;
    padding-bottom: 25px;
    overflow: hidden;
-   border: 1px solid rgb(0, 42, 255);
+   border: 1px solid rgb(6, 212, 244);
    border-radius: 10px;
+   box-shadow: 2px 2px 20px rgb(103, 105, 103);
  }
 
  .cards img{
@@ -139,6 +144,14 @@ a.active , a:hover{
 
  .cards img:hover{
    box-shadow: 2px 2px 20px rgb(103, 105, 103);
+ }
+
+ .increasing{
+   color: rgba(10, 248, 248, 0.966);
+   width: 18%;
+   font-size: 30px;
+   margin: auto;
+   padding-bottom: 40px;
  }
 
  @media (max-width: 650px){
@@ -176,16 +189,21 @@ a.active , a:hover{
 
    .know{
       font-size: 30px;
-      margin-top: 60px;
+      margin-top: 150px;
    }
 
-   .aboutme , .extra{
+   .aboutme {
       font-size: 20px;
    }
 
-   .bodymid{
+   .extra{
       border: 1px solid yellow;
-      margin-left: 0px;
+      font-size: 20px;
+      overflow: hidden;
+   }
+
+   .bodymid{
+      margin-left: 10px;
    }
 
    .coder2 img{
@@ -194,17 +212,12 @@ a.active , a:hover{
    }
 
    .description{
-      margin-left: 10px;
+      margin-left: 0px;
       width: 100%;
    }
 
    .aboutme{
       width: 100%;     
-   }
-
-   .extra ul{
-       margin-left: 0px;
-       overflow: hidden;
    }
 
    .languages{
@@ -215,16 +228,24 @@ a.active , a:hover{
     }
 
     .cards{
+      align-content: center;
       width: 100%;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 0px;
     }
 
     .cards img{
       margin-left: 75px;
     }
 
+    .increasing{
+      font-size: 30px;
+      margin: 30px 40px;
+    }
+
 }
+
+
+ 
 
 
  
