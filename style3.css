@@ -4,6 +4,7 @@
    padding: 0px;
    text-decoration: none;
    list-style: none;
+   font-family: roboto;
  }
  
 body{
@@ -18,7 +19,7 @@ nav{
 }
 
 label.logo{
-   color: white;
+   color:rgba(57, 163, 245, 0.966);
    font-size: 50px;
    line-height: 88px;
    padding: 0 60px;
@@ -62,18 +63,24 @@ a.active , a:hover{
    display: none;
 }
 
+header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
  .mywork{
-    color: white;
+    color: rgba(10, 248, 248, 0.966);
     font-size: 35px;
     width: 11%;
-    padding-top: 40px;
+    padding-top: 130px;
     margin: auto;
  }
 
  .smalldesmywork{
     color: white;
     font-size: 20px;
-    width: 23%;
+    width: 24%;
     margin: auto;
     margin-top: 10px;
  }
@@ -207,13 +214,33 @@ a.active , a:hover{
  }
 
  .coming{
-    color: white;
+    color:  rgba(10, 248, 248, 0.966);
     font-size: 40px;
     margin-top: 30px;
-    width: 50%;
-    margin-left: 550px;
+    display: inline-block;
+    margin-left: 545px;
+    border-right: 4px solid rgba(10, 248, 248, 0.966);
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+       typing 4s steps(22),
+       cursor .4s step-end infinite alternate;
  }
 
+@keyframes cursor {
+   50% {
+       border-color: transparent
+   }
+}
+
+@keyframes typing {
+   from {
+       width: 0
+   }
+}
+
+
+/* for phones */
 
  @media (max-width: 650px){
    label.logo{
@@ -324,4 +351,6 @@ a.active , a:hover{
       margin-left: 40px;
    }
 }
+
+
 
