@@ -190,7 +190,10 @@ header {
 
     .intro {
         padding: 0px;
-        margin: 140px 20px 50px;
+        margin-top: 140px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-left: 20px;
         font-size: 25px;
         width: 90%;
 
