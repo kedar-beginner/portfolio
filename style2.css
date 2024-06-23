@@ -154,7 +154,9 @@ header{
    padding-bottom: 40px;
  }
 
- @media (max-width: 650px){
+/* for phones */
+
+ @media (max-width: 400px){
    label.logo{
        font-size: 30px;
        padding-left: 40px;
