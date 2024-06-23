@@ -4,6 +4,7 @@
    padding: 0px;
    text-decoration: none;
    list-style: none;
+   font-family: roboto;
  }
  
 body{
@@ -18,7 +19,7 @@ nav{
 }
 
 label.logo1{
-   color: white;
+   color:rgba(57, 104, 140, 0.966);
    font-size: 50px;
    line-height: 88px;
    padding: 0 60px;
@@ -62,24 +63,19 @@ a.active , a:hover{
    display: none;
 }
 
+header{
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
  .contact{
     color: white;
     font-size: 30px;
-    width: 50%;
-    padding-top: 60px;
+    width: 55%;
+    padding-top: 150px;
     margin: auto;
  }
-
- /*.container{
-    color: white;
-    margin: auto;
-    margin-top: 40px;
-    background-color: rgb(38, 37, 37);
-    width: 30%;
-    border: 1px solid red;
-    border-radius: 10px;
- }
-    */
 
  form{
     width: 60%;
@@ -95,34 +91,31 @@ a.active , a:hover{
     box-shadow: 2px 2px 20px rgb(103, 105, 103);
  }
 
- #name{
+ .items{
     width: 98%;
     margin-top: 10px;
     height: 30px;
+    border: none;
     border-radius: 5px;
     font-size: 15px;
- }
-
- #email{
-    width: 98%;
-    margin-top: 10px;
-    height: 30px;
-    border-radius: 5px;
-    font-size: 15px;   
+    padding: 10px;
  }
 
  #textarea{
     width: 98%;
     margin-top: 10px;
     border-radius: 5px;
+    padding: 10px;
  }
 
- #btn{
+ input[type=submit]{
      width: 98%;
      text-align: center;
      cursor: pointer;
      padding: 5px;
+     border: none;
      border-radius: 5px;
+     margin-bottom: 20px;
  }
 
  .connect{
@@ -146,6 +139,7 @@ a.active , a:hover{
 
  .logo2{
     margin-left: 68px;
+    margin-bottom: 30px;
  }
 
 .logo2 a{
@@ -158,7 +152,9 @@ a.active , a:hover{
     margin-left: 18px;
 }
 
-@media (max-width: 650px){
+/* for phones */
+
+@media (max-width: 400px){
    label.logo1{
       font-size: 30px;
       padding-left: 40px;
@@ -201,7 +197,7 @@ a.active , a:hover{
       width: 90%;
    }
 
-   #btn{
+   input[type=submit]{
       margin: auto;
    }
 
@@ -211,16 +207,24 @@ a.active , a:hover{
    }
 
    .socialmedia{
-      margin-left: 30px;
+      width: 55%;
+      margin: auto;
+      padding-bottom: 15px;
       font-size: 22px;
+      margin-left: 45px;
    }
 
    .feel{
+      width: 31%;
+      margin: auto;
       font-size: 18px;
-      margin-left: 90px;
+      margin-left: 105px;
+      
    }
 
    .logo2{
-      margin-left: 80px;
+      width: 34%;
+      margin: auto;
+      margin-left: 97px;
    }
 }
