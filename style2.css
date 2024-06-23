@@ -232,6 +232,7 @@ header{
       align-content: center;
       width: 100%;
       margin-left: 0px;
+       padding-left: 20px;
     }
 
     .cards img{
