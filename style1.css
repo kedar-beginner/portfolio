@@ -4,51 +4,53 @@
     padding: 0px;
     text-decoration: none;
     list-style: none;
-  }
-  
-body{
-   background-image: url(background.jpeg);
-   background-repeat: repeat-y;
+    font-family: roboto;
 }
 
-nav{
+body {
+    background-image: url(background.jpeg);
+    background-repeat: repeat-y;
+}
+
+nav {
     background-color: rgb(22, 22, 22);
     height: 90px;
     width: 100%;
 }
 
-label.logo1{
-    color: white;
+label.logo1 {
+    color: rgba(57, 163, 245, 0.966);
     font-size: 50px;
     line-height: 88px;
     padding: 0 60px;
     font-weight: bold;
 }
 
-nav ul{
+nav ul {
     float: right;
     margin-right: 90px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     line-height: 96px;
     margin: 0 10px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     font-size: 25px;
     padding: 7px 13px;
     text-transform: uppercase;
 }
 
-a.active , a:hover{
-    color:rgb(109, 110, 110);
+a.active,
+a:hover {
+    color: rgb(109, 110, 110);
     transition: 0.5s;
 }
 
-.checkbtn{
+.checkbtn {
     color: white;
     font-size: 25px;
     float: right;
@@ -58,58 +60,86 @@ a.active , a:hover{
     display: none;
 }
 
-#check{
+#check {
     display: none;
 }
 
 
-.intro{
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.intro {
     color: white;
     font-size: 40px;
-    margin-top: 80px;
+    margin-top: 175px;
     overflow: hidden;
 }
 
-.intro1{
+.intro1 {
     width: 500px;
     float: left;
     margin-top: 97px;
     margin-left: 120px;
 }
 
-
-.typewriter{
-      margin-top: 30px;
+.typewriter {
+    margin-top: 30px;
 }
 
-.coder1 img{
+.wd{
+    border-right: 4px solid rgba(10, 248, 248, 0.966);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 4s steps(13),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+.coder1 img {
     width: 480px;
     margin-left: 250px;
+
 }
 
-.connect{
+.connect {
     height: 90px;
     margin-top: 50px;
     display: flex;
 }
 
-.connect a{
+.connect a {
     text-decoration: none;
 }
 
-.connect a img{
+.connect a img {
     width: 6%;
     margin-top: 17px;
     margin-bottom: 17px;
     margin-left: 15px;
 }
 
-.logo2{
+.logo2 {
     width: 60%;
     padding-top: 10px;
 }
 
-.findme{
+.findme {
     color: white;
     font-size: 25px;
     display: inline-block;
@@ -119,81 +149,82 @@ a.active , a:hover{
     margin-bottom: 20px;
 }
 
-span{
-    color: rgba(10,248,248,0.966);
+.wd {
+    color: rgba(10, 248, 248, 0.966);
 }
 
+/* for phones */
 
-@media (max-width: 500px){
-    label.logo1{
+@media (max-width: 400px) {
+    label.logo1 {
         font-size: 30px;
         padding-left: 40px;
     }
 
-    nav ul li a{
+    nav ul li a {
         font-size: 15px;
     }
 
-    .checkbtn{
+    .checkbtn {
         display: block;
     }
 
-    ul{
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color:rgb(37, 37, 37);
+        background-color: rgb(37, 37, 37);
         left: -100%;
         text-align: center;
         transition: all 0.5s;
     }
 
-    nav ul li{
-        display: block; 
-        margin: 10px 0px;     
+    nav ul li {
+        display: block;
+        margin: 10px 0px;
     }
-    
-    #check:checked ~ ul{
+
+    #check:checked~ul {
         left: 0;
     }
 
-    .intro{
+    .intro {
         padding: 0px;
         margin: 50px 20px;
         font-size: 25px;
         width: 90%;
-        
+
     }
 
-    .intro1{
+    .intro1 {
         width: 80%;
         margin: 20px 30px;
     }
 
-    .coder1 img{
+    .coder1 img {
         width: 80%;
         margin: 0px 27px;
     }
 
-    .connect{
+    .connect {
         display: flex;
         flex-direction: column;
     }
 
-    .findme{
+    .findme {
         width: 38%;
         font-size: 22px;
         margin: auto;
     }
 
-    .logo2{
+    .logo2 {
         width: 42%;
         margin: auto;
-     }
-    
-    .logo2 a img{
+    }
+
+    .logo2 a img {
         width: 25px;
         margin-top: 5px;
         margin-bottom: 40px;
-     }
+    }
 }
